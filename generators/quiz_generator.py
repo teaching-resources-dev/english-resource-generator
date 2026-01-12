@@ -12,7 +12,7 @@ from typing import Dict, Optional
 
 import streamlit as st
 
-from generators.llm_client import get_llm_client, RateLimitError, ContentFilterError, GenerationError
+from generators.llm_client import get_client, RateLimitError, ContentFilterError, GenerationError
 from docx_generation.docx_styles import (
     setup_document,
     add_header_footer,
@@ -103,7 +103,7 @@ Available Resources: {', '.join(text_info.get('resources', []))}
     )
 
     # Generate with LLM
-    client = get_llm_client()
+    client = get_client()
     return client.generate(prompt, max_tokens=4000, temperature=0.7)
 
 

@@ -96,6 +96,21 @@ class GenerationError(Exception):
 
 
 @st.cache_resource
-def get_llm_client() -> GeminiClient:
-    """Get a cached LLM client instance."""
+def get_llm_client(_api_key_hash: str = None) -> GeminiClient:
+    """Get a cached LLM client instance.
+
+    Args:
+        _api_key_hash: Hash of API key to bust cache when key changes.
+    """
     return GeminiClient()
+
+
+def get_client() -> GeminiClient:
+    """Get LLM client, busting cache if API key changed."""
+    try:
+        api_key = st.secrets.gemini.api_key
+        # Use first/last 4 chars as cache key (don't expose full key)
+        key_hash = f"{api_key[:4]}...{api_key[-4:]}"
+    except Exception:
+        key_hash = "default"
+    return get_llm_client(_api_key_hash=key_hash)
