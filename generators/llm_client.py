@@ -62,7 +62,11 @@ class GeminiClient:
         except Exception as e:
             error_msg = str(e).lower()
             full_error = str(e)
-            if "rate" in error_msg or "quota" in error_msg:
+            if "404" in error_msg or "not found" in error_msg:
+                raise GenerationError(
+                    f"Model not available. Details: {full_error[:300]}"
+                )
+            elif "rate" in error_msg or "quota" in error_msg:
                 raise RateLimitError(
                     f"Rate limit reached. Please wait a few minutes and try again. "
                     f"(Details: {full_error[:200]})"
