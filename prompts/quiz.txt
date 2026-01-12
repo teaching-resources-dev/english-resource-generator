@@ -1,0 +1,74 @@
+You are creating a multiple-choice quiz for {year_level} English students studying {text_name}.
+
+{pedagogy_core}
+
+---
+
+## Quiz Requirements
+
+**Topic**: {topic}
+**Number of Questions**: {num_questions}
+**Text Type**: {text_type}
+
+### Question Design Principles
+
+1. **Evidence-Based Distractors**: Each wrong answer must test a specific student misconception
+   - Example: Confusing metaphor with simile, misidentifying character motivation
+   - NO "All of the above" or "None of the above" options
+
+2. **Balanced Answer Distribution**: Spread correct answers across A, B, C, D
+   - Don't cluster correct answers (e.g., avoid AAAB or DDDC patterns)
+
+3. **Plausible Options**: All four options must seem reasonable to students who haven't mastered the content
+
+4. **Clear Question Stems**: Questions should be unambiguous and test one concept
+
+5. **Year-Appropriate Language**: Match vocabulary and complexity to {year_level}
+
+### Context from Knowledge Base
+
+{knowledge_context}
+
+---
+
+## Output Format
+
+Generate the quiz in this exact format:
+
+# Quiz: {topic}
+**Text**: {text_name}
+**Year Level**: {year_level}
+
+---
+
+## Questions
+
+### Question 1
+[Question text]
+
+A) [Option A]
+B) [Option B]
+C) [Option C]
+D) [Option D]
+
+---
+
+[Repeat for all questions]
+
+---
+
+## Answer Key
+
+| Question | Answer | Explanation |
+|----------|--------|-------------|
+| 1 | [Letter] | [Brief explanation of why this is correct and why others are wrong] |
+| 2 | [Letter] | [Explanation] |
+[Continue for all questions]
+
+---
+
+## Teacher Notes
+
+- **Common Misconceptions Tested**: [List 2-3 misconceptions the distractors target]
+- **Extension**: [One suggestion for extending high-achieving students]
+- **Support**: [One suggestion for supporting struggling students]

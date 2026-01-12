@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "English Resource Generator - Text Index",
+    "description": "Index of available texts for resource generation",
+    "last_updated": "2026-01-12",
+    "source": "English Assistant Knowledge Base"
+  },
+  "year_levels": [
+    {"id": "7", "label": "Year 7", "course": "7ENG"},
+    {"id": "8", "label": "Year 8", "course": "8ENG"},
+    {"id": "9F", "label": "Year 9 Fundamentals", "course": "9ENGFUN"},
+    {"id": "10", "label": "Year 10", "course": "10ENG"},
+    {"id": "10F", "label": "Year 10 Fundamentals", "course": "10ENGFUN"},
+    {"id": "11", "label": "Year 11 ATAR", "course": "11ATAR"},
+    {"id": "12", "label": "Year 12 ATAR", "course": "12ATAR"}
+  ],
+  "texts": [
+    {
+      "id": "painting-with-words",
+      "name": "Painting With Words",
+      "year": "7",
+      "type": "Short Stories",
+      "folder": "year7/Painting With Words",
+      "resources": ["themes", "language-features"]
+    },
+    {
+      "id": "chinese-cinderella",
+      "name": "Chinese Cinderella",
+      "year": "8",
+      "type": "Novel",
+      "folder": "year8/Chinese Cinderella",
+      "resources": ["characters", "themes", "language-features", "plot-structure"]
+    },
+    {
+      "id": "the-giver",
+      "name": "The Giver",
+      "year": "8",
+      "type": "Novel",
+      "folder": "year8/The Giver",
+      "resources": ["characters", "themes", "language-features"]
+    },
+    {
+      "id": "personal-context",
+      "name": "Personal Context",
+      "year": "8",
+      "type": "Unit",
+      "folder": "year8/Personal Context",
+      "resources": ["themes"]
+    },
+    {
+      "id": "boy-overboard",
+      "name": "Boy Overboard",
+      "year": "9F",
+      "type": "Novel",
+      "folder": "year9fundamentals/9ENGFUN_Boy_Overboard",
+      "resources": ["characters", "themes", "language-features"]
+    },
+    {
+      "id": "9f-short-stories",
+      "name": "Short Stories",
+      "year": "9F",
+      "type": "Short Stories",
+      "folder": "year9fundamentals/9ENGFUN_Short_Stories",
+      "resources": ["themes", "language-features"]
+    },
+    {
+      "id": "visual-images",
+      "name": "Visual Images",
+      "year": "9F",
+      "type": "Unit",
+      "folder": "year9fundamentals/9ENGFUN_Visual_Images",
+      "resources": ["visual-analysis"]
+    },
+    {
+      "id": "the-gathering",
+      "name": "The Gathering",
+      "year": "10",
+      "type": "Novel",
+      "folder": "year10/10ENG_The_Gathering",
+      "resources": ["characters", "themes", "language-features", "plot-structure", "values-attitudes", "heros-journey"]
+    },
+    {
+      "id": "pleasantville",
+      "name": "Pleasantville",
+      "year": "10",
+      "type": "Film",
+      "folder": "year10/10ENG_Pleasantville",
+      "resources": ["characters", "themes", "cinematography", "values-attitudes"]
+    },
+    {
+      "id": "the-crucible",
+      "name": "The Crucible",
+      "year": "10",
+      "type": "Play",
+      "folder": "year10/10ENG_The_Crucible",
+      "resources": ["characters", "themes", "language-features", "historical-context"]
+    },
+    {
+      "id": "10-short-stories",
+      "name": "Short Stories",
+      "year": "10",
+      "type": "Short Stories",
+      "folder": "year10/10ENG_Short_Stories",
+      "resources": ["themes", "language-features"]
+    },
+    {
+      "id": "media-advertising",
+      "name": "Media and Advertising",
+      "year": "10",
+      "type": "Unit",
+      "folder": "year10/10ENG_Media_and_Advertising",
+      "resources": ["visual-analysis", "persuasive-techniques"]
+    },
+    {
+      "id": "persuasive-writing",
+      "name": "Persuasive Writing",
+      "year": "10",
+      "type": "Unit",
+      "folder": "year10/10ENG_Persuasive_Writing",
+      "resources": ["persuasive-techniques", "language-features"]
+    },
+    {
+      "id": "the-outsiders",
+      "name": "The Outsiders",
+      "year": "10F",
+      "type": "Novel",
+      "folder": "year10fundamentals/The Outsiders",
+      "resources": ["characters", "themes", "language-features"]
+    },
+    {
+      "id": "10f-short-stories",
+      "name": "Short Stories",
+      "year": "10F",
+      "type": "Short Stories",
+      "folder": "year10fundamentals/Short Stories",
+      "resources": ["themes", "language-features"]
+    },
+    {
+      "id": "red-dog",
+      "name": "Red Dog",
+      "year": "10F",
+      "type": "Novel/Film",
+      "folder": "year10fundamentals/Red Dog",
+      "resources": ["characters", "themes"]
+    },
+    {
+      "id": "animal-farm",
+      "name": "Animal Farm",
+      "year": "11",
+      "type": "Novel",
+      "folder": "year11/11ATAR_Animal_Farm",
+      "resources": ["characters", "themes", "language-features", "allegory", "historical-context"]
+    },
+    {
+      "id": "jasper-jones",
+      "name": "Jasper Jones",
+      "year": "11",
+      "type": "Novel",
+      "folder": "year11/11ATAR_Jasper_Jones",
+      "resources": ["characters", "themes", "language-features", "historical-context"]
+    },
+    {
+      "id": "montana-1948",
+      "name": "Montana 1948",
+      "year": "12",
+      "type": "Novel",
+      "folder": "year12/12ATAR_Montana_1948",
+      "resources": ["characters", "themes", "language-features", "historical-context", "narrative-voice"]
+    },
+    {
+      "id": "no-sugar",
+      "name": "No Sugar",
+      "year": "12",
+      "type": "Play",
+      "folder": "year12/12ATAR_No_Sugar",
+      "resources": ["characters", "themes", "language-features", "historical-context", "stagecraft"]
+    }
+  ]
+}
