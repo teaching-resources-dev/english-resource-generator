@@ -26,7 +26,7 @@ def main():
     # Check authentication
     if not check_authentication():
         st.warning("Please log in from the home page to access this feature.")
-        st.page_link("app.py", label="Go to Login", icon="🏠")
+        st.switch_page("app.py")
         return
 
     st.title("📝 Generate Resource")

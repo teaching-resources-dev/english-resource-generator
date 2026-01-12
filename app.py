@@ -47,9 +47,9 @@ def main():
         st.markdown("""
         ### 📝 Quiz Generator
         Create multiple-choice quizzes with answer keys.
-
-        [Generate Quiz →](./Generate)
         """)
+        if st.button("Generate Quiz →", key="quiz_btn"):
+            st.switch_page("pages/1_Generate.py")
 
     with col2:
         st.markdown("""
