@@ -27,7 +27,8 @@ class GeminiClient:
                 )
 
         genai.configure(api_key=api_key)
-        self.model = genai.GenerativeModel("gemini-1.5-flash")
+        # Use gemini-2.0-flash - the current free tier model
+        self.model = genai.GenerativeModel("gemini-2.0-flash")
 
     def generate(
         self,
