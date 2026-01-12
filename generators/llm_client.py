@@ -60,12 +60,24 @@ class GeminiClient:
             return response.text
         except Exception as e:
             error_msg = str(e).lower()
+            full_error = str(e)
             if "rate" in error_msg or "quota" in error_msg:
-                raise RateLimitError("Rate limit reached. Please wait a moment and try again.")
+                raise RateLimitError(
+                    f"Rate limit reached. Please wait a few minutes and try again. "
+                    f"(Details: {full_error[:200]})"
+                )
+            elif "invalid" in error_msg and "key" in error_msg:
+                raise GenerationError(
+                    "Invalid API key. Please check your Gemini API key in Streamlit secrets."
+                )
+            elif "api_key" in error_msg or "api key" in error_msg:
+                raise GenerationError(
+                    f"API key issue: {full_error[:200]}"
+                )
             elif "safety" in error_msg or "blocked" in error_msg:
                 raise ContentFilterError("Content was filtered. Try rephrasing the topic.")
             else:
-                raise GenerationError(f"Generation failed: {str(e)}")
+                raise GenerationError(f"Generation failed: {full_error[:300]}")
 
 
 class RateLimitError(Exception):
